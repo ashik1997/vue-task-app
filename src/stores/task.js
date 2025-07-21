@@ -1,5 +1,7 @@
-import { ref, reactive, computed } from "vue";
 import { defineStore } from "pinia";
+
+import { ref, reactive, computed } from "vue";
+
 import { allTasks, createTask, updateTask, completeTask, deleteTask  } from "../http/task-api";
 
 export const useTaskStore = defineStore("taskStore", () => {
